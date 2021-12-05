@@ -11,17 +11,24 @@
   <img alt="Sonar code smells metric" src="https://sonarcloud.io/api/project_badges/measure?project=leonardolocatti_spendev-gateway-ms&metric=code_smells" />
 </p>
 
-## About
+## 📓 About
 
-Gateway microservice used in Spendev project
+Gateway microservice used in Spendev (financial control app)
 
-## Running
+## 🔗 Prerequisites
+
+This project depends on [Spendev Discovery Microservice](https://github.com/leonardolocatti/spendev-discovery-ms). To
+run this one first run the other.
+
+## ⏩ Running
 
 ```bash
 mvn spring-boot:run
+
+# The application will start a gateway on port 8765
 ```
 
-## Tech stack
+## 🔨 Tech stack
 
 - **[Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)**
 - **[Spring Cloud Netflix](https://spring.io/projects/spring-cloud-netflix)**
