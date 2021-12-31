@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Lazy;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Configuration
 public class OpenApiConfig {
@@ -34,7 +33,7 @@ public class OpenApiConfig {
                     .group(name)
                     .build();
               })
-          .collect(Collectors.toList());
+          .toList();
     }
 
     return new ArrayList<>();
